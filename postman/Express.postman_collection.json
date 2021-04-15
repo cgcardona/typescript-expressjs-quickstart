@@ -1,0 +1,34 @@
+{
+	"info": {
+		"_postman_id": "9c974e4b-dac4-4091-8467-43c3acb19529",
+		"name": "Express",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "v1",
+			"item": [
+				{
+					"name": "health-check",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{host}}:{{port}}/v1/health-check",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{host}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"v1",
+								"health-check"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
