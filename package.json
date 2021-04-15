@@ -1,5 +1,5 @@
 {
-  "name": "express-app",
+  "name": "typescript-express-quickstart",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
