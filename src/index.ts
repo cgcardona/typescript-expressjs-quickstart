@@ -10,6 +10,11 @@ const {
 const healthCheckV1 = require("./routes/v1/health-check")
 
 app.use(helmet());
+app.get('/', (req: Request, res: Response) => {
+  res.send({
+    message: 'hello world',
+  });
+});
 app.use(`/${v1prefix}/health-check`, healthCheckV1)
 
 if (require.main === module) { // true if file is executed
